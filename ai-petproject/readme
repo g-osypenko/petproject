@@ -1,0 +1,20 @@
+What i studied doing this pet project:
+1. **Large Language Models (LLMs)**: Gained hands-on experience with integrating and utilizing LLMs for natural language processing tasks.
+
+2. **RAG (Retrieval-Augmented Generation)**: Implemented a system where AI retrieves relevant information from a database and generates human-readable responses.
+
+3. **Database Integration with PostgreSQL and SQLAlchemy**: Gained experience in working with JSONB columns and ORM models for flexible data storage.
+
+4. **API Usage with Google Gemini**: Utilized the latest version of the Google Gemini API for generating SQL queries and interpreting results.
+
+5. **Vector Embeddings Management**: Implemented a vector manager to handle embedding generation for product descriptions, improving search capabilities.
+
+6. **System Architecture Design**: Developed a modular architecture that separates concerns between user interaction, AI processing, database operations, and result interpretation.
+
+7. **Error Handling and Logging**: Improved error handling practices and logging mechanisms to ensure robustness in production environments.
+
+8. **Daemon Mode Implementation**: Built a background process that periodically updates missing embeddings in the database.
+
+9. **Data Modeling Best Practices**: Applied best practices for modeling structured data within PostgreSQLs JSONB fields while maintaining relational integrity.
+
+10. **Performance Optimization Techniques**: Learned techniques for optimizing database queries and API calls to improve response times and reduce resource consumption.

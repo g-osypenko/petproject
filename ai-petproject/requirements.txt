@@ -1,0 +1,6 @@
+aiogram
+sqlalchemy
+psycopg2 
+python-dotenv
+google-genai
+pgvector
