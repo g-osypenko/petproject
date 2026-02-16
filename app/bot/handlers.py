@@ -40,7 +40,6 @@ async def start_handler(message: types.Message) -> None:
 
 @router.message(F.text == "📦 Мої замовлення")
 async def my_orders(message: types.Message):
-    # Тут пізніше буде запит до бази SQL
     await message.answer("🔍 Ця функція в розробці. Тут буде список ваших покупок.")
 
 @router.message(F.text == "↩️ Повернення товару")
@@ -73,14 +72,12 @@ async def order_issues(message: types.Message):
 async def ai_help(message: types.Message):
     await message.answer("Я вас слухаю! Просто напишіть, який товар ви шукаєте, або задайте питання.")
 
-# --- 3. ОБРОБКА ВСЬОГО ІНШОГО (AI) ---
-# Цей хендлер стоїть останнім і ловить все, що не кнопки
 @router.message()
 async def chat_handler(message: types.Message) -> None:
     user_id = message.from_user.id
     user_input = message.text or ""
 
-    # Ігноруємо службові повідомлення без тексту
+
     if not user_input: return
 
     await message.bot.send_chat_action(chat_id=message.chat.id, action="typing")

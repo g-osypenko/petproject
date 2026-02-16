@@ -21,7 +21,7 @@ def run_migrations():
     db = SessionLocal()
     init_migration_table()
     
-    # Шукаємо файли .py у папці migrations
+
     files = sorted([f for f in os.listdir(MIGRATION_DIR) if f.endswith(".py") and f != "__init__.py"])
     
     print(f"📦 Знайдено файлів міграцій: {len(files)}")
