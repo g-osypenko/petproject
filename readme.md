@@ -60,7 +60,7 @@ cd ai-shop-bot
 
 Create a `.env` file in the root directory.
 **Note:** Inside Docker, the database host is `db`, not `localhost`.
-
+Firstly you also need to create your api key for telegram(personally i used @BotFather) and gemini(aistudio)
 ```env
 BOT_TOKEN=your_telegram_bot_token
 GEMINI_API_KEY=your_google_api_key
@@ -102,6 +102,7 @@ docker-compose exec bot python -m app.database.core
   ```
 
 ## 🚀 How to Run
+
 
 To run the full system, you need to execute **two separate processes** concurrently.
 
